@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <config>
+        <tabs>
+            <kavenegar translate="label">
+                <label>وب سرویس پیام کوتاه کاوه نگار</label>
+                <sort_order>1</sort_order>
+            </kavenegar>
+        </tabs>
+        <sections>
+            <kavenegarapi translate="label" module="kavenegarapi">
+                <label><![CDATA[<span class="kavenegarapiadmin-menu Yekan">وب سرویس پیام کوتاه کاوه نگار</span>]]></label>
+                <tab>وب سرویس پیام کوتاه کاوه نگار</tab>
+                <frontend_type>text</frontend_type>
+                <sort_order>0</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <groups>
+                    <branding_header translate="label" module="kavenegarapi">
+                        <frontend_model>kavenegarapi/adminhtml_system_config_fieldset_branding</frontend_model>
+                        <sort_order>0</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                    </branding_header>
+                    <main_conf translate="label">store
+                        <label>تنظیمات</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>1</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <expanded>1</expanded>
+                        <fields>
+                            <active translate="label">
+                                <label>وضعیت فعال بودن</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>1</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </active>
+                            <apikey translate="label">
+                                <label>کلید شناسایی (API-KEY)</label>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>2</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </apikey>
+                            <sender translate="label">
+                                <label>شماره خط ارسال کننده پیام</label>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>3</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </sender>
+                            <storename translate="label">
+                                <label>نام فروشگاه</label>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>4</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </storename>
+							 <admin_mobile translate="label">
+                                <label>موبایل مدیر سایت</label>
+                                <frontend_type>text</frontend_type>
+                                <sort_order>5</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </admin_mobile>
+                        </fields>
+                    </main_conf>
+                    <templates translate="label comment" module="kavenegarapi">
+                        <label>اطلاع رسانی رویداد ها</label>
+                        <frontend_type>text</frontend_type>
+                        <comment>Message templates comment</comment>
+                        <sort_order>100</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <expanded>1</expanded>
+                        <fields>
+						
+							<status_admin_pending_active translate="label">
+                                <label>ارسال پیام  به مدیر سایت بعد از تغییر وضعیت به " در انتظار پرداخت "</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>6</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </status_admin_pending_active>
+                            <status_admin_pending translate="label">
+                                <label>قالب</label>
+                                <frontend_type>textarea</frontend_type>
+                                <sort_order>7</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <depends>
+                                    <status_admin_pending_active>1</status_admin_pending_active>
+                                </depends>
+                            </status_admin_pending>
+						
+						
+						
+                            <status_pending_active translate="label">
+                                <label>ارسال پیام بعد از  تغییر وضعیت  به " در انتظار پرداخت "</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>8</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </status_pending_active>
+                            <status_pending translate="label">
+                                <label>قالب</label>
+                                <frontend_type>textarea</frontend_type>
+                                <sort_order>9</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <depends>
+                                    <status_pending_active>1</status_pending_active>
+                                </depends>
+                            </status_pending>
+                            <status_holded_active translate="label">
+                                <label>ارسال پیام بعد از تغییر وضعیت به " تعلیق"</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>10</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </status_holded_active>
+                            <status_holded translate="label">
+                                <label>قالب</label>
+                                <frontend_type>textarea</frontend_type>
+                                <sort_order>11</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <depends>
+                                    <status_holded_active>1</status_holded_active>
+                                </depends>
+                            </status_holded>
+                            <status_processing_active translate="label">
+                                <label>ارسال پیام بعد از تغییر وضعیت به "در حال پردازش"</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>12</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </status_processing_active>
+                            <status_processing translate="label">
+                                <label>قالب</label>
+                                <frontend_type>textarea</frontend_type>
+                                <sort_order>13</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <depends>
+                                    <status_processing_active>1</status_processing_active>
+                                </depends>
+                            </status_processing>
+                            <status_canceled_active translate="label">
+                                <label>ارسال پیام بعد از تغییر وضعیت به "لغو شده"</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>14</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </status_canceled_active>
+                            <status_canceled translate="label">
+                                <label>قالب</label>
+                                <frontend_type>textarea</frontend_type>
+                                <sort_order>15</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <depends>
+                                    <status_canceled_active>1</status_canceled_active>
+                                </depends>
+                            </status_canceled>
+                            <status_complete_active translate="label">
+                                <label>ارسال پیام بعد از تغییر وضعیت به "کامل شده"</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>16</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </status_complete_active>
+                            <status_complete translate="label">
+                                <label>قالب</label>
+                                <frontend_type>textarea</frontend_type>
+                                <sort_order>17</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <depends>
+                                    <status_complete_active>1</status_complete_active>
+                                </depends>
+                            </status_complete>
+                            <status_closed_active translate="label">
+                                <label>ارسال پیام بعد از تغییر وضعیت به "بسته شده"</label>
+                                <frontend_type>select</frontend_type>
+                                <source_model>adminhtml/system_config_source_yesno</source_model>
+                                <sort_order>18</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </status_closed_active>
+                            <status_closed translate="label">
+                                <label>قالب</label>
+                                <frontend_type>textarea</frontend_type>
+                                <sort_order>19</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                                <depends>
+                                    <status_closed_active>1</status_closed_active>
+                                </depends>
+                            </status_closed>
+                        </fields>
+                    </templates>
+                    <contact translate="label" module="kavenegarapi">
+                        <label>تماس با ما</label>
+                        <comment>http://kavenegar.com/support/contact</comment>
+                        <sort_order>200</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                    </contact>
+                </groups>
+            </kavenegarapi>
+        </sections>
+    </config>

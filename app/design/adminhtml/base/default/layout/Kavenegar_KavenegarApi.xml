@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.1">
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>kavenegarapi/kavenegarapi.js</script></action>
+            <action method="addCss"><name>css/kavenegarapi/kavenegarapi.css</name></action>
+        </reference>
+    </default>
+    <adminhtml_kavenegarapi_index>
+        <reference name="content">
+            <block type="kavenegarapi/adminhtml_kavenegarapi" name="kavenegarapi" />
+        </reference>
+    </adminhtml_kavenegarapi_index>
+        <kavenegarapi_adminhtml_kavenegarapi_index>
+        <reference name="content">
+            <block type="kavenegarapi/adminhtml_kavenegarapi" name="kavenegarapi" />
+        </reference>
+    </kavenegarapi_adminhtml_kavenegarapi_index>
+</layout>

@@ -1,0 +1,30 @@
+@font-face {
+	    font-family: 'Yekan';
+	    src:url('../../fonts/Yekan.woff') format('woff');
+		 
+}
+.kavenegarapi-menu {
+	color:#ff6900;
+	padding-left:0px !important;
+	padding-right:20px;
+}
+.Yekan{
+ font-family: 'Yekan',tahoma;
+}
+#config_edit_form *{
+	 font-family: 'Yekan',tahoma;
+}
+.form-list td.label {
+    width: 300px;
+}
+.form-list td.label label {
+    font-size: 1.2em;
+	width:290px;
+}
+.entry-edit .entry-edit-head strong, .entry-edit .entry-edit-head a {
+    font-size: 1.2em;
+    line-height: 30px;
+}
+.comment{
+padding:10px;background-color:#fff;border:1px solid #CCC;margin-bottom:7px;
+}

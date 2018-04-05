@@ -1,0 +1,3 @@
+
+"SMS notification sent (SMS id:","اطلاع رسانی از طریق پیامک  با شناسه"
+"Message templates comment","<div>در هر قالب شما می توانید داده های پویا استفاده کنید.<br>{NAME} - نام مشتری <br>{ORDERNUMBER} - تعداد سفارش<br>{TRACKINGNUMBER} - شماره پیگیری <br>{STORENAME} - نام فروشگاه</div>"
